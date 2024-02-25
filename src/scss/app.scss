@@ -1,0 +1,16 @@
+body {
+  background: #6a6a6a;
+}
+
+@import "_somethingelse";
+
+nav.main {
+  .container {
+    a {
+      color: #FFF;
+    }
+    a.active {
+      color: red;
+    }
+  }
+}

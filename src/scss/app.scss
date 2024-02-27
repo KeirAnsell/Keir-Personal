@@ -1,16 +1,330 @@
 body {
-  background: #6a6a6a;
+  font-family: "AT-Hauss-Variable", sans-serif;
+  background-color: #111 !important;
 }
 
-@import "_somethingelse";
+@import "Fonts";
 
 nav.main {
   .container {
+    background: #1C1E22;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.25), 0 5px 20px 0 rgba(0,0,0,0.50), inset 0 1px 0 0 rgba(255,255,255,0.10);
+    border-radius: 14px;
+    padding: 8px;
+    width: 334px;
+    height: 50px;
+    margin: auto;
     a {
       color: #FFF;
+      width: 54px;
+      height: 50px;
+      text-align: center;
+      float: left;
+      img {
+        padding: 13px 10px 13px 10px;
+      }
+      &:hover svg path {
+        fill: red;
+        color: red;
+      }
     }
     a.active {
       color: red;
+      .highlight {
+        background: #42FFCA;
+        box-shadow: 0 0 5px 0 rgba(68,255,202,0.50), 0 1px 2px 0 rgba(0,0,0,0.80), inset 0 1px 0 0 rgba(255,255,255,0.50);
+        border-radius: 2px;
+        width: 44px;
+        height: 3px;
+        margin: -4px 5px 0 5px;
+        display: block;
+        float: left;
+      }
+    }
+    a.active svg path {
+      fill: red;
+      color: red;
+    }
+  }
+}
+
+/* HEADER */
+header {
+  margin: auto;
+  max-width: 900px;
+  background-image: linear-gradient(270deg, rgba(47,50,53,0.10) 0%, rgba(33,34,36,0.05) 50%, rgba(47,50,53,0.10) 100%), radial-gradient(circle at 50% 50%, #1C1E22 0%, #141517 194%);
+  border-radius: 14px;
+  box-shadow: 0 5px 10px 0 rgba(0,0,0,0.75);
+  topbar {
+    background: rgba(0,0,0,0.25);
+    box-shadow: 0 1px 0 0 rgba(255,255,255,0.05), inset 0 1px 0 0 rgba(255,255,255,0.10), inset 0 -1px 5px 0 rgba(0,0,0,0.10);
+    border-radius: 14px 14px 0 0;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 72px;
+    .Mastodon {
+      font-size: 12px;
+      font-weight: 500;
+      color: #C2C1FD;
+      letter-spacing: 0;
+      line-height: 16px;
+      flex-grow: 1;
+      display: flex;
+      align-items: center;
+      flex-grow: 2;
+      .Icon {
+        margin: 24px 0 24px 24px;
+      }
+      .Text {
+        line-height: 24px;
+        padding-left: 4px;
+      }
+    }
+    .LastFM {
+      font-size: 12px;
+      font-weight: 500;
+      color: #FFEED6;
+      letter-spacing: 0;
+      flex-grow: 1;
+      display: flex;
+      align-items: center;
+      height: 40px;
+      margin: 16px 0 16px 0;
+      flex-grow: 1;
+      .Icon {
+        margin: 24px 0 24px 24px;
+      }
+      .Text {
+        padding-left: 4px;
+        width: 100%;
+        #now_playing {
+          line-height: 40px;
+          position: relative;
+          float: left;
+          a {
+            font-size: 12px;
+            color: #FFEED6;
+            text-decoration: none;
+          }
+        }
+        #LastFM {
+          float: right;
+          margin-right: 16px;
+          position: relative; 
+          ol {
+            width: 40px;
+            margin: 0;
+            padding: 0;
+            li {
+              margin: 0;
+              padding: 0;
+              float: left;
+              a {
+
+                img {
+                  width: 40px;
+                  height: 40px;
+                  margin: 2px 0 0 0;
+                  border-radius: 6px;
+                  box-shadow: 0 1px 2px 0 rgba(0,0,0,0.60);
+                }                
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .Logo {
+    width: 240px;
+    height: 158px;
+    margin-top: 48px;
+    margin-left: 50%;
+    left: -120px;
+    position: relative;
+  }
+  h1 {
+    font-size: 48px;
+    font-weight: 800;
+    color: #FFEED8;
+    letter-spacing: 0;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.80);
+    line-height: 56px;
+    margin: 16px 0 0 0;
+    .Sirname {
+      font-weight: 300;
+    }
+  }
+  h2 {
+    font-size: 20px;
+    font-weight: 400;
+    color: #FFEED6;
+    letter-spacing: 1px;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.80);
+    line-height: 24px;
+    margin: 4px 0 0 0;
+    padding-bottom: 48px;
+  }
+  .PixelBar {
+    height: 50px;
+    border-radius: 0 0 14px 14px;
+  }
+}
+
+/* HOME */
+#Home {
+  header {
+    
+    .PixelBar {
+        background-image: url("../-/IMG/Pixel-Bar-Red.png");
+      }
+    }
+  main {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    .TopTrack {      
+      background: #0A0A0A, rgba(0,161,75,0.1);
+      box-shadow: 0 0 0 1px rgba(0,0,0,0.05), 0 10px 16px -15px rgba(0,0,0,0.90), inset 0 1px 0 0 rgba(255,255,255,0.05);
+      border-radius: 14px;
+      min-width: 350px;
+      height: 104px;
+      display: flex;
+      .Artwork {
+        background-color: red;
+        width: 72px;
+        height: 72px;
+        margin: 16px 8px 0 16px;
+      }
+      .Content {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        .Title {
+          font-size: 12px;
+          height: 12px;
+          color: rgba(255,255,255,0.30);
+          width: 100%;
+        }
+        .Track {
+          font-size: 14px;
+          height: 13px;
+          color: rgba(255,255,255,0.80);
+          width: 100%;
+        }
+        .Artist {
+          font-size: 14px;
+          height: 13px;
+          color: rgba(255,255,255,0.80);
+        }
+      }
+      .Icon {
+        background-image: url("../-/IMG/Icons/20/Spotify.svg");
+        width: 20px;
+        height: 20px;
+      }
+    }
+    .Photo {
+      background: #D8D8D8;
+      box-shadow: 0 0 0 1px rgba(0,0,0,0.05), 0 10px 16px -15px rgba(0,0,0,0.90), inset 0 1px 0 0 rgba(255,255,255,0.10);
+      border-radius: 14px;
+      box-shadow: inset 0 1px 0 0 rgba(255,255,255,0.10);
+      border-radius: 14px;
+      min-width: 350px;
+      min-height: 350px;
+    }
+    .Toot {
+      background: #0A0A0A, rgba(121,141,253,0.1);
+      box-shadow: 0 0 0 1px rgba(0,0,0,0.05), 0 10px 16px -15px rgba(0,0,0,0.90), inset 0 1px 0 0 rgba(255,255,255,0.05);
+      border-radius: 14px;
+      min-width: 350px;
+      min-height: 100px;
+      .Icon {
+        background-image: url("../-/IMG/Icons/20/Mastodon.svg");
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+}
+
+/* ABOUT */
+body#About {
+  header {
+  
+  .PixelBar {
+      background-image: url("../-/IMG/Pixel-Bar-Yellow.png");
+    }
+  }
+}
+
+/* USES */
+body#Uses {
+  background-color: #111 !important;
+}
+#Uses nav.sub {
+  .container {
+    background-image: url('../-/IMG/background-noise.png');
+    background-color: #1C1E22;
+    background-blend-mode: overlay;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.25), 0 5px 20px 0 rgba(0,0,0,0.50), inset 0 0 0 0 rgba(255,255,255,0.10);
+    border-radius: 14px;
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+    a {
+      width: 100%;
+      height: 40px;
+      font-size: 14px;
+      color: #FFEED6;
+      letter-spacing: 0;
+      line-height: 40px;
+      text-decoration: none;
+      padding-left: 16px;
+      &.active {
+        text-indent: 8px;
+        .highlight {
+          background: #42FFCA;
+          box-shadow: 0 0 5px 0 rgba(68,255,202,0.50), 0 1px 2px 0 rgba(0,0,0,0.80), inset 0 1px 0 0 rgba(255,255,255,0.50);
+          border-radius: 2px;
+          width: 3px;
+          height: 24px;
+          margin-top: 8px;
+          display: block;
+          float: left;
+        }
+      }
+    }
+    a:hover {
+      color: red;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #Uses nav.sub {
+    .container {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      a {
+        width: 40%;
+        height: 40px;
+        &.active {
+          text-indent: 8px;
+          .highlight {
+          }
+        }
+      }
+      a:hover {
+        color: red;
+      }
     }
   }
 }

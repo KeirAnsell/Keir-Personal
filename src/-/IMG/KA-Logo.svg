@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="240px" height="158px" viewBox="0 0 240 158" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>KA Logo</title>
+    <defs>
+        <filter x="-22.0%" y="-32.8%" width="144.0%" height="179.4%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="5" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="10" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <linearGradient x1="64.7136332%" y1="17.1953755%" x2="40.7524757%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#A92B24" offset="0%"></stop>
+            <stop stop-color="#CB3D2B" offset="100%"></stop>
+        </linearGradient>
+        <polygon id="path-3" points="60.7857143 102 108.428571 3.53883589e-15 123.214286 32.0806452 90.3571429 102"></polygon>
+        <filter x="-20.8%" y="-10.8%" width="141.6%" height="125.5%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="4" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.05 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="36.4489187%" y1="4.30211422e-14%" x2="66.509542%" y2="102.200416%" id="linearGradient-5">
+            <stop stop-color="#CB3D2B" offset="0%"></stop>
+            <stop stop-color="#A92B24" offset="100%"></stop>
+        </linearGradient>
+        <polygon id="path-6" points="108.428571 0 155.25 102 184 102 137.178571 0"></polygon>
+        <filter x="-17.2%" y="-10.8%" width="134.4%" height="125.5%" filterUnits="objectBoundingBox" id="filter-7">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="4" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.05 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="24.7022223%" y1="10.8333333%" x2="81.7073094%" y2="80.09375%" id="linearGradient-8">
+            <stop stop-color="#DD752E" offset="0%"></stop>
+            <stop stop-color="#E9B530" offset="100%"></stop>
+        </linearGradient>
+        <polygon id="path-9" points="16.4285714 57.5806452 60.7857143 102 71.6285714 78.9677419 34.5 39.483871"></polygon>
+        <filter x="-23.6%" y="-17.6%" width="147.1%" height="141.6%" filterUnits="objectBoundingBox" id="filter-10">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="4" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.05 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="77.2439236%" y1="19.6681828%" x2="12.1875%" y2="70.8294276%" id="linearGradient-11">
+            <stop stop-color="#DD752E" offset="0%"></stop>
+            <stop stop-color="#E9B530" offset="100%"></stop>
+        </linearGradient>
+        <polygon id="path-12" points="0 41.1290323 16.4285714 57.5806452 73.9285714 -3.1963679e-15 41.0714286 -2.82324903e-13"></polygon>
+        <filter x="-17.6%" y="-19.1%" width="135.2%" height="145.2%" filterUnits="objectBoundingBox" id="filter-13">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="4" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.05 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Uses" transform="translate(-600, -197)">
+            <g id="Header" transform="translate(170, 98)">
+                <g id="KA-Logo" filter="url(#filter-1)" transform="translate(458, 120)">
+                    <g id="Path-3">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                        <use fill="url(#linearGradient-2)" fill-rule="evenodd" xlink:href="#path-3"></use>
+                    </g>
+                    <g id="Path-4">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-7)" xlink:href="#path-6"></use>
+                        <use fill="url(#linearGradient-5)" fill-rule="evenodd" xlink:href="#path-6"></use>
+                    </g>
+                    <g id="Path-2">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-10)" xlink:href="#path-9"></use>
+                        <use fill="url(#linearGradient-8)" fill-rule="evenodd" xlink:href="#path-9"></use>
+                    </g>
+                    <g id="Path">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-13)" xlink:href="#path-12"></use>
+                        <use fill="url(#linearGradient-11)" fill-rule="evenodd" xlink:href="#path-12"></use>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

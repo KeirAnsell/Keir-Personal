@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		{% include 'header-meta.njk' %}
+
+		<title>{{ title | safe }}</title>
+	</head>
+	<body id="Uses-Hardware">
+		{% include 'header.njk' %}
+		
+		{% include 'main-navigation.njk' %}
+		{% include 'uses-navigation.njk' %}
+		
+		{{ content | safe }}
+		
+		{% include 'footer.njk' %}
+
+	</body>
+</html>

@@ -1,18 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta charset="UTF-8" >
-
-		<meta name="viewport" content="width=device-width" >
-		<meta name="Description" content="{{ title }}">
-
-		<meta name="generator" content="{{ eleventy.generator }}">
-
-        <link rel="stylesheet" href="/scss/app.css" type="text/css" media="screen">
+		{% include 'header-meta.njk' %}
 
 		<title>{{ title | safe }}</title>
 	</head>
-	<body>
+	<body id="Uses">
 		{% include 'header.njk' %}
 		
 		{% include 'main-navigation.njk' %}

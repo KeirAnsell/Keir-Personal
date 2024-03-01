@@ -8,7 +8,7 @@
 				trueOrder: false,
 				waitForImages: false,
 				margin: 24,
-				columns: 6,
+				columns: 2,
 				breakAt: {
 					1200: 5,
 					940: 3,
@@ -25,8 +25,8 @@
 		{% include 'header.njk' %}
 		
 		<main>
-		{% include 'uses-navigation.njk' %}
-		{{ content | safe }}
+			{% include 'uses-navigation.njk' %}
+			{{ content | safe }}
 		</main>
 		
 		{% include 'footer.njk' %}

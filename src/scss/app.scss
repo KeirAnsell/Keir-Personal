@@ -222,14 +222,10 @@ header {
     min-width: 360px;
     margin: auto;
     margin-top: 24px;
-    column-count: 2;
-    column-gap: 24px;
     card {
       margin: 0;
       margin-bottom: 24px;
       display: grid;
-      grid-template-rows: 1fr auto;
-      break-inside: avoid;
     }
     .TopTrack {
       background: #0A0A0A, rgba(0,161,75,0.1);
@@ -308,7 +304,6 @@ header {
         align-content: center;
         padding: 16px;
         p {
-          font-family: "At-Hauss-Var", sans-serif;
           font-weight: 600;
           font-size: 14px;
           color: rgba(255,255,255,0.80);
@@ -577,6 +572,7 @@ header {
             color: #FFEED6;
             letter-spacing: 0;
             line-height: 24px;
+            text-indent: 4px;
           }
         }
       }
@@ -802,9 +798,6 @@ header {
           .highlight {
           }
         }
-      }
-      a:hover {
-        color: red;
       }
     }
   }

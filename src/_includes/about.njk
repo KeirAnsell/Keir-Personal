@@ -6,11 +6,10 @@
 		<title>{{ title | safe }}</title>
 	</head>
 	<body id="About">
-		{% include 'header.njk' %}
-		
 		{% include 'main-navigation.njk' %}
-		{% include 'about-navigation.njk' %}
-		
+
+		{% include 'header.njk' %}
+				
 		{{ content | safe }}
 		
 		{% include 'footer.njk' %}

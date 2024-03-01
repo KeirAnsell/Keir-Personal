@@ -55,3 +55,20 @@ $(function(){
   });
 });
 </script>
+
+<script type='text/javascript'>
+	$(document).ready( function() {
+		var _config = {
+		username: 'keir',         // last.fm username
+		placeholder: 'LastFM',   // id of the div in HTML to use for cd covers
+		//defaultthumb: './lastfm_logo.jpg',  // image when no cd cover or artist image is found
+		period: 'recenttracks',         // which period/type of data do you want to show? you can choose from
+								// recenttracks, 7day, 3month, 6month, 12month, overall, 
+								// topalbums and lovedtracks
+		count: 1,              // number of images to show
+		refresh: 5,             // when to get new data from last.fm (in minutes)
+		offset: 5               // difference between your timezone and GMT.
+		};
+		lastFmRecords.init(_config);
+	});
+</script>

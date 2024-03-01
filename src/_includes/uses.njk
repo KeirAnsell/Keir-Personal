@@ -5,13 +5,15 @@
 
 		<title>{{ title | safe }}</title>
 	</head>
-	<body id="Uses">
+	<body id="Uses" class="Uses-Hardware">
+		{% include 'main-navigation.njk' %}
+
 		{% include 'header.njk' %}
 		
-		{% include 'main-navigation.njk' %}
+		<main>
 		{% include 'uses-navigation.njk' %}
-		
 		{{ content | safe }}
+		</main>
 		
 		{% include 'footer.njk' %}
 

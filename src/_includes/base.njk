@@ -6,7 +6,12 @@
     <title>{{ title | safe }}</title>
   </head>
   <body>
-    {% include 'header.njk' %} {% include 'main-navigation.njk' %} {{ content |
-    safe }} {% include 'footer.njk' %}
+    {% include 'main-navigation.njk' %}
+
+    {% include 'header.njk' %}    
+    
+    {{ content | safe }}
+    
+    {% include 'footer.njk' %}
   </body>
 </html>

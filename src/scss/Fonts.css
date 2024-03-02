@@ -1,0 +1,57 @@
+@font-face {
+  font-family: "AT-Hauss";
+  src: url("../-/FONTS/AtHauss-Thin.woff2") format("woff2");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "AT-Hauss";
+  src: url("../-/FONTS/AtHauss-Light.woff2") format("woff2");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "AT-Hauss";
+  src: url("../-/FONTS/AtHauss-Retina.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "AT-Hauss";
+  src: url("../-/FONTS/AtHauss-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "AT-Hauss";
+  src: url("../-/FONTS/AtHauss-Semibold.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "AT-Hauss";
+  src: url("../-/FONTS/AtHauss-Bold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "AT-Hauss";
+  src: url("../-/FONTS/AtHauss-Black.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "AT-Hauss";
+  src: url("../-/FONTS/AtHauss-Super.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal;
+}
+/*
+@font-face {
+  font-family: "AT-Hauss-Variable";
+  src: url("../-/FONTS/AtHauss-Variable.woff2") format("woff2");
+  font-style: normal;
+}
+*/
+
+/*# sourceMappingURL=Fonts.css.map */

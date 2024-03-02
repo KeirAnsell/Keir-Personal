@@ -1,9 +1,818 @@
+@charset "UTF-8";
 body {
-  background: #111;
+  font-family: "AT-Hauss", sans-serif;
+  background-color: #111 !important;
 }
 
-p {
-  color: orange;
+@font-face {
+  font-family: "AT-Hauss";
+  src: url("../-/FONTS/AtHauss-Thin.woff2") format("woff2");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "AT-Hauss";
+  src: url("../-/FONTS/AtHauss-Light.woff2") format("woff2");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "AT-Hauss";
+  src: url("../-/FONTS/AtHauss-Retina.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "AT-Hauss";
+  src: url("../-/FONTS/AtHauss-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "AT-Hauss";
+  src: url("../-/FONTS/AtHauss-Semibold.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "AT-Hauss";
+  src: url("../-/FONTS/AtHauss-Bold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "AT-Hauss";
+  src: url("../-/FONTS/AtHauss-Black.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "AT-Hauss";
+  src: url("../-/FONTS/AtHauss-Super.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal;
+}
+/*
+@font-face {
+  font-family: "AT-Hauss-Variable";
+  src: url("../-/FONTS/AtHauss-Variable.woff2") format("woff2");
+  font-style: normal;
+}
+*/
+nav.main {
+  margin: 24px 0 24px 0;
+}
+nav.main .container {
+  background: #1c1e22;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.25), 0 5px 20px 0 rgba(0, 0, 0, 0.5), inset 0 1px 0 0 rgba(255, 255, 255, 0.1);
+  border-radius: 14px;
+  padding: 8px 0 8px 0;
+  max-width: 500px;
+  height: 50px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+}
+nav.main .container a {
+  font-size: 12px;
+  font-weight: 600;
+  color: #ffeed6;
+  line-height: 50px;
+  text-decoration: none;
+  height: 50px;
+  min-width: 50px;
+  text-align: center;
+  float: left;
+  display: flex;
+  flex-direction: column;
+}
+nav.main .container a .Label {
+  padding: 0 16px 0 16px;
+}
+nav.main .container a.active {
+  color: #ffeed6;
+}
+nav.main .container a.active .Highlight {
+  background: #cb3d2b;
+  box-shadow: 0 0 5px 0 rgba(237, 63, 28, 0.5), 0 1px 2px 0 rgba(0, 0, 0, 0.8), inset 0 1px 0 0 rgba(255, 255, 255, 0.3);
+  border-radius: 2px;
+  width: 100%;
+  height: 3px;
+  margin: -4px 0 0 0;
+  display: block;
+  float: left;
+}
+
+/* HEADER */
+header {
+  margin: auto;
+  max-width: 900px;
+  min-width: 724px;
+  background-image: url("../-/IMG/background-noise-5.png"), linear-gradient(270deg, rgba(47, 50, 53, 0.1) 0%, rgba(33, 34, 36, 0.05) 50%, rgba(47, 50, 53, 0.1) 100%), radial-gradient(circle at 50% 50%, #1c1e22 0%, #141517 194%);
+  background-blend-mode: soft-light;
+  border-radius: 14px;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.75);
+}
+header topbar {
+  background: rgba(0, 0, 0, 0.25);
+  box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.05), inset 0 1px 0 0 rgba(255, 255, 255, 0.1), inset 0 -1px 5px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 14px 14px 0 0;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 72px;
+}
+header topbar .Mastodon {
+  font-size: 12px;
+  font-weight: 500;
+  color: #c2c1fd;
+  letter-spacing: 0;
+  line-height: 16px;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  flex-grow: 2;
+}
+header topbar .Mastodon .Icon {
+  width: 24px;
+  height: 24px;
+  margin: 24px 0 24px 24px;
+}
+header topbar .Mastodon .Text {
+  height: 24px;
+  line-height: 24px;
+  padding-left: 4px;
+}
+header topbar .LastFM {
+  font-size: 12px;
+  font-weight: 500;
+  color: #ffeed6;
+  letter-spacing: 0;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  height: 40px;
+  margin: 16px 0 16px 0;
+  flex-grow: 1;
+}
+header topbar .LastFM .Icon {
+  width: 24px;
+  height: 24px;
+  margin: 24px 0 24px 24px;
+}
+header topbar .LastFM .Text {
+  padding-left: 4px;
+  width: 100%;
+}
+header topbar .LastFM .Text #now_playing {
+  height: 45px;
+  position: relative;
+  float: left;
+}
+header topbar .LastFM .Text #now_playing a {
+  line-height: 24px;
+  height: 24px;
+  margin: 11px 0 0 0;
+  text-indent: 8px;
+  font-size: 12px;
+  color: #ffeed6;
+  text-decoration: none;
+  float: left;
+}
+header topbar .LastFM .Text #LastFM {
+  float: right;
+  margin-right: 16px;
+  position: relative;
+}
+header topbar .LastFM .Text #LastFM ol {
+  width: 40px;
+  margin: 0;
+  padding: 0;
+}
+header topbar .LastFM .Text #LastFM ol li {
+  margin: 0;
+  padding: 0;
+  float: left;
+}
+header topbar .LastFM .Text #LastFM ol li a img {
+  width: 40px;
+  height: 40px;
+  margin: 2px 0 0 0;
+  border-radius: 6px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.6);
+}
+header .Logo {
+  background-image: url("../-/IMG/KA-Logo-1.png");
+  background-size: cover;
+  width: 240px;
+  height: 158px;
+  margin-top: 48px;
+  margin-left: 50%;
+  left: -120px;
+  position: relative;
+}
+header h1 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #ffeed8;
+  letter-spacing: 0;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8);
+  line-height: 56px;
+  margin: 16px 0 0 0;
+}
+header h1 .Sirname {
+  font-weight: 400 !important;
+}
+header h2 {
+  font-size: 20px;
+  font-weight: 400;
+  color: #ffeed6;
+  letter-spacing: 1px;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8);
+  line-height: 24px;
+  margin: 4px 0 0 0;
+  padding-bottom: 48px;
+}
+header .PixelBar {
+  width: calc(100% + 16px);
+  margin-left: -8px;
+  height: 50px;
+  border-radius: 8px;
+}
+
+/*
+
+██╗░░██╗░█████╗░███╗░░░███╗███████╗
+██║░░██║██╔══██╗████╗░████║██╔════╝
+███████║██║░░██║██╔████╔██║█████╗░░
+██╔══██║██║░░██║██║╚██╔╝██║██╔══╝░░
+██║░░██║╚█████╔╝██║░╚═╝░██║███████╗
+╚═╝░░╚═╝░╚════╝░╚═╝░░░░░╚═╝╚══════╝
+
+░░██╗██████╗░███████╗░██████╗██╗░░██╗████████╗░█████╗░██████╗░██╗░░
+░██╔╝██╔══██╗██╔════╝██╔════╝██║░██╔╝╚══██╔══╝██╔══██╗██╔══██╗╚██╗░
+██╔╝░██║░░██║█████╗░░╚█████╗░█████═╝░░░░██║░░░██║░░██║██████╔╝░╚██╗
+╚██╗░██║░░██║██╔══╝░░░╚═══██╗██╔═██╗░░░░██║░░░██║░░██║██╔═══╝░░██╔╝
+░╚██╗██████╔╝███████╗██████╔╝██║░╚██╗░░░██║░░░╚█████╔╝██║░░░░░██╔╝░
+░░╚═╝╚═════╝░╚══════╝╚═════╝░╚═╝░░╚═╝░░░╚═╝░░░░╚════╝░╚═╝░░░░░╚═╝░░
+
+*/
+#Home header .PixelBar {
+  background-image: url("../-/IMG/Pixel-Bar-Red.png");
+}
+#Home main {
+  max-width: 724px;
+  min-width: 360px;
+  margin: auto;
+  margin-top: 24px;
+}
+#Home main card {
+  margin: 0;
+  margin-bottom: 24px;
+}
+#Home main .TopTrack {
+  background: #0a0a0a, rgba(0, 161, 75, 0.1);
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 10px 16px -15px rgba(0, 0, 0, 0.9), inset 0 1px 0 0 rgba(255, 255, 255, 0.05);
+  border-radius: 14px;
+  min-width: 350px;
+  height: 104px;
+  display: flex;
+}
+#Home main .TopTrack .Artwork {
+  background-color: red;
+  width: 72px;
+  height: 72px;
+  margin: 16px 8px 0 16px;
+}
+#Home main .TopTrack .Content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+}
+#Home main .TopTrack .Content .Title {
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: bold;
+  letter-spacing: 0.5;
+  text-transform: uppercase;
+  height: 12px;
+  color: rgba(255, 255, 255, 0.3);
+  width: 100%;
+}
+#Home main .TopTrack .Content .Track {
+  font-size: 14px;
+  line-height: 16px;
+  height: 16px;
+  color: rgba(255, 255, 255, 0.8);
+  width: 100%;
+}
+#Home main .TopTrack .Content .Artist {
+  font-size: 14px;
+  line-height: 16px;
+  height: 16px;
+  color: rgba(255, 255, 255, 0.8);
+}
+#Home main .TopTrack .Icon {
+  background-image: url("../-/IMG/Icons/20/Spotify.svg");
+  width: 20px;
+  height: 20px;
+}
+#Home main .Photo {
+  background: #d8d8d8;
+  background-size: cover;
+  background-position: center center;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 10px 16px -15px rgba(0, 0, 0, 0.9), inset 0 1px 0 0 rgba(255, 255, 255, 0.1);
+  border-radius: 14px;
+  box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.1);
+  border-radius: 14px;
+  min-width: 350px;
+  min-height: 350px;
+}
+#Home main .Photo#One {
+  background-image: url("../-/IMG/Photos/DSCF2945.jpeg");
+}
+#Home main .Photo#Two {
+  background-image: url("../-/IMG/Photos/DSCF6820.jpeg");
+}
+#Home main .Toot {
+  background: #0a0a0a, rgba(121, 141, 253, 0.1);
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 10px 16px -15px rgba(0, 0, 0, 0.9), inset 0 1px 0 0 rgba(255, 255, 255, 0.05);
+  border-radius: 14px;
+  min-width: 350px;
+}
+#Home main .Toot .Content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  padding: 16px;
+}
+#Home main .Toot .Content p {
+  font-weight: 600;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 20px;
+  margin: 0;
+}
+#Home main .Toot .Content .Avatar {
+  background-color: red;
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+}
+#Home main .Toot .Content .Icon {
+  background-image: url("../-/IMG/Icons/20/Mastodon.svg");
+  width: 20px;
+  height: 20px;
+  float: right;
+  position: relative;
+}
+
+/*
+
+░█████╗░██████╗░░█████╗░██╗░░░██╗████████╗
+██╔══██╗██╔══██╗██╔══██╗██║░░░██║╚══██╔══╝
+███████║██████╦╝██║░░██║██║░░░██║░░░██║░░░
+██╔══██║██╔══██╗██║░░██║██║░░░██║░░░██║░░░
+██║░░██║██████╦╝╚█████╔╝╚██████╔╝░░░██║░░░
+╚═╝░░╚═╝╚═════╝░░╚════╝░░╚═════╝░░░░╚═╝░░░
+
+░░██╗██████╗░███████╗░██████╗██╗░░██╗████████╗░█████╗░██████╗░██╗░░
+░██╔╝██╔══██╗██╔════╝██╔════╝██║░██╔╝╚══██╔══╝██╔══██╗██╔══██╗╚██╗░
+██╔╝░██║░░██║█████╗░░╚█████╗░█████═╝░░░░██║░░░██║░░██║██████╔╝░╚██╗
+╚██╗░██║░░██║██╔══╝░░░╚═══██╗██╔═██╗░░░░██║░░░██║░░██║██╔═══╝░░██╔╝
+░╚██╗██████╔╝███████╗██████╔╝██║░╚██╗░░░██║░░░╚█████╔╝██║░░░░░██╔╝░
+░░╚═╝╚═════╝░╚══════╝╚═════╝░╚═╝░░╚═╝░░░╚═╝░░░░╚════╝░╚═╝░░░░░╚═╝░░
+
+*/
+#About nav.main .container .Highlight {
+  background: #f68e1f;
+  box-shadow: 0 0 5px 0 rgba(246, 142, 31, 0.5), 0 1px 2px 0 rgba(0, 0, 0, 0.8), inset 0 1px 0 0 rgba(255, 255, 255, 0.3);
+}
+
+#About header .Logo {
+  background-image: url("../-/IMG/KA-Logo-2.png");
+  background-size: cover;
+}
+#About header .PixelBar {
+  background-image: url("../-/IMG/Pixel-Bar-Yellow.png");
+}
+#About main {
+  max-width: 900px;
+  min-width: 360px;
+  margin: auto;
+  margin-top: 24px;
+}
+
+#About nav.sub .container {
+  background-image: url("../-/IMG/background-noise-5.png");
+  background-color: #1c1e22;
+  background-blend-mode: overlay;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.25), 0 5px 20px 0 rgba(0, 0, 0, 0.5), inset 0 0 0 0 rgba(255, 255, 255, 0.1);
+  border-radius: 14px;
+  width: 180px;
+  display: flex;
+  flex-direction: column;
+}
+#About nav.sub .container a {
+  width: 100%;
+  height: 40px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffeed6;
+  letter-spacing: 0;
+  line-height: 40px;
+  text-decoration: none;
+  padding-left: 16px;
+  transition: all 150ms ease-in-out;
+}
+#About nav.sub .container a:hover {
+  padding-left: 24px;
+  transition: all 150ms ease-in-out;
+}
+#About nav.sub .container a.active {
+  text-indent: 8px;
+}
+#About nav.sub .container a.active .highlight {
+  background: #f68e1f;
+  box-shadow: 0 0 5px 0 rgba(246, 142, 31, 0.5), 0 1px 2px 0 rgba(0, 0, 0, 0.8), inset 0 1px 0 0 rgba(255, 255, 255, 0.5);
+  border-radius: 2px;
+  width: 3px;
+  height: 24px;
+  margin-top: 8px;
+  display: block;
+  float: left;
+}
+
+/*
+
+██╗░░░██╗░██████╗███████╗░██████╗
+██║░░░██║██╔════╝██╔════╝██╔════╝
+██║░░░██║╚█████╗░█████╗░░╚█████╗░
+██║░░░██║░╚═══██╗██╔══╝░░░╚═══██╗
+╚██████╔╝██████╔╝███████╗██████╔╝
+░╚═════╝░╚═════╝░╚══════╝╚═════╝░
+
+░░██╗██████╗░███████╗░██████╗██╗░░██╗████████╗░█████╗░██████╗░██╗░░
+░██╔╝██╔══██╗██╔════╝██╔════╝██║░██╔╝╚══██╔══╝██╔══██╗██╔══██╗╚██╗░
+██╔╝░██║░░██║█████╗░░╚█████╗░█████═╝░░░░██║░░░██║░░██║██████╔╝░╚██╗
+╚██╗░██║░░██║██╔══╝░░░╚═══██╗██╔═██╗░░░░██║░░░██║░░██║██╔═══╝░░██╔╝
+░╚██╗██████╔╝███████╗██████╔╝██║░╚██╗░░░██║░░░╚█████╔╝██║░░░░░██╔╝░
+░░╚═╝╚═════╝░╚══════╝╚═════╝░╚═╝░░╚═╝░░░╚═╝░░░░╚════╝░╚═╝░░░░░╚═╝░░
+
+*/
+#Uses nav.main .container .Highlight {
+  background: #006666;
+  box-shadow: 0 0 5px 0 rgba(0, 102, 102, 0.5), 0 1px 2px 0 rgba(0, 0, 0, 0.8), inset 0 1px 0 0 rgba(255, 255, 255, 0.3);
+}
+
+#Uses header .Logo {
+  background-image: url("../-/IMG/KA-Logo-3.png");
+  background-size: cover;
+}
+#Uses header .PixelBar {
+  background-image: url("../-/IMG/Pixel-Bar-Green.png");
+}
+
+.Uses-Hardware main {
+  max-width: 900px;
+  min-width: 360px;
+  margin: auto;
+  margin-top: 24px;
+}
+.Uses-Hardware main .Content {
+  width: calc(100% - 204px);
+  float: right;
+  column-count: 2;
+  column-gap: 24px;
+}
+.Uses-Hardware main .Content .Card {
+  background-image: url("../-/IMG/background-noise-2.png"), linear-gradient(180deg, #282c2b 0%, #222525 100%);
+  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.5), inset 0 1px 0 0 rgba(255, 255, 255, 0.15);
+  border-radius: 14px;
+  max-width: 350px;
+  padding: 24px;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  break-inside: auto;
+}
+.Uses-Hardware main .Content .Card .Icon {
+  background-color: #ffeed6;
+  width: 32px;
+  height: 32px;
+}
+.Uses-Hardware main .Content .Card h2 {
+  font-size: 20px;
+  color: #ffeed6;
+  letter-spacing: 0;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8);
+  margin: 4px 0 0 0;
+  padding: 0;
+}
+.Uses-Hardware main .Content .Card .Tag {
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  line-height: 18px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  height: 18px;
+  margin: 8px 0 16px 0;
+  padding: 0 4px 0 4px;
+  justify-self: start;
+  float: left;
+}
+.Uses-Hardware main .Content .Card .Tag#Green {
+  background: rgba(66, 255, 202, 0.2);
+  color: #42ffca;
+}
+.Uses-Hardware main .Content .Card#Gaming-PC .Icon {
+  -webkit-mask-image: url("../-/IMG/Icons/32/PC.svg");
+  mask-image: url("../-/IMG/Icons/32/PC.svg");
+}
+.Uses-Hardware main .Content .Card#Mac-Studio .Icon {
+  -webkit-mask-image: url("../-/IMG/Icons/32/Mac-Studio.svg");
+  mask-image: url("../-/IMG/Icons/32/Mac-Studio.svg");
+}
+.Uses-Hardware main .Content .Card ul {
+  margin: 0;
+  padding: 0;
+}
+.Uses-Hardware main .Content .Card ul li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.Uses-Hardware main .Content .Card ul li .Icon {
+  background-color: #ffeed6;
+  width: 24px;
+  height: 24px;
+  margin-right: 4px;
+  float: left;
+}
+.Uses-Hardware main .Content .Card ul li .Icon#CPU {
+  -webkit-mask-image: url("../-/IMG/Icons/24/Hardware/CPU.svg");
+  mask-image: url("../-/IMG/Icons/24/Hardware/CPU.svg");
+}
+.Uses-Hardware main .Content .Card ul li .Icon#RAM {
+  -webkit-mask-image: url("../-/IMG/Icons/24/Hardware/RAM.svg");
+  mask-image: url("../-/IMG/Icons/24/Hardware/RAM.svg");
+}
+.Uses-Hardware main .Content .Card ul li .Icon#GPU {
+  -webkit-mask-image: url("../-/IMG/Icons/24/Hardware/GPU.svg");
+  mask-image: url("../-/IMG/Icons/24/Hardware/GPU.svg");
+}
+.Uses-Hardware main .Content .Card ul li .Icon#Motherboard {
+  -webkit-mask-image: url("../-/IMG/Icons/24/Hardware/Motherboard.svg");
+  mask-image: url("../-/IMG/Icons/24/Hardware/Motherboard.svg");
+}
+.Uses-Hardware main .Content .Card ul li .Icon#Storage {
+  -webkit-mask-image: url("../-/IMG/Icons/24/Hardware/NVMe.svg");
+  mask-image: url("../-/IMG/Icons/24/Hardware/NVMe.svg");
+}
+.Uses-Hardware main .Content .Card ul li .Icon#Display {
+  -webkit-mask-image: url("../-/IMG/Icons/24/Hardware/Display.svg");
+  mask-image: url("../-/IMG/Icons/24/Hardware/Display.svg");
+}
+.Uses-Hardware main .Content .Card ul li .Icon#Case {
+  -webkit-mask-image: url("../-/IMG/Icons/24/Hardware/Case.svg");
+  mask-image: url("../-/IMG/Icons/24/Hardware/Case.svg");
+}
+.Uses-Hardware main .Content .Card ul li .Icon#Keyboard {
+  -webkit-mask-image: url("../-/IMG/Icons/24/Hardware/Keyboard.svg");
+  mask-image: url("../-/IMG/Icons/24/Hardware/Keyboard.svg");
+}
+.Uses-Hardware main .Content .Card ul li .Icon#Mouse {
+  -webkit-mask-image: url("../-/IMG/Icons/24/Hardware/Mouse.svg");
+  mask-image: url("../-/IMG/Icons/24/Hardware/Mouse.svg");
+}
+.Uses-Hardware main .Content .Card ul li .Icon#Trackpad {
+  -webkit-mask-image: url("../-/IMG/Icons/24/Hardware/Trackpad.svg");
+  mask-image: url("../-/IMG/Icons/24/Hardware/Trackpad.svg");
+}
+.Uses-Hardware main .Content .Card ul li .Icon#Speakers {
+  -webkit-mask-image: url("../-/IMG/Icons/24/Hardware/Speakers.svg");
+  mask-image: url("../-/IMG/Icons/24/Hardware/Speakers.svg");
+}
+.Uses-Hardware main .Content .Card ul li .Icon#Headset {
+  -webkit-mask-image: url("../-/IMG/Icons/24/Hardware/Headset.svg");
+  mask-image: url("../-/IMG/Icons/24/Hardware/Headset.svg");
+}
+.Uses-Hardware main .Content .Card ul li p {
+  font-size: 12px;
+  color: #ffeed6;
+  letter-spacing: 0;
+  line-height: 24px;
+  text-indent: 4px;
+}
+
+#Uses nav.sub .container {
+  background-image: url("../-/IMG/background-noise-5.png");
+  background-color: #1c1e22;
+  background-blend-mode: overlay;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.25), 0 5px 20px 0 rgba(0, 0, 0, 0.5), inset 0 0 0 0 rgba(255, 255, 255, 0.1);
+  border-radius: 14px;
+  width: 180px;
+  display: flex;
+  flex-direction: column;
+  float: left;
+}
+#Uses nav.sub .container a {
+  width: 100%;
+  height: 40px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffeed6;
+  letter-spacing: 0;
+  line-height: 40px;
+  text-decoration: none;
+  padding-left: 16px;
+  transition: all 150ms ease-in-out;
+}
+#Uses nav.sub .container a:hover {
+  padding-left: 24px;
+  transition: all 150ms ease-in-out;
+}
+#Uses nav.sub .container a.active {
+  text-indent: 8px;
+}
+#Uses nav.sub .container a.active .highlight {
+  background: #006666;
+  box-shadow: 0 0 5px 0 rgba(0, 102, 102, 0.5), 0 1px 2px 0 rgba(0, 0, 0, 0.8), inset 0 1px 0 0 rgba(255, 255, 255, 0.3);
+  border-radius: 2px;
+  width: 3px;
+  height: 24px;
+  margin-top: 8px;
+  display: block;
+  float: left;
+}
+
+/*
+
+██████╗░██████╗░░█████╗░░░░░░██╗███████╗░█████╗░████████╗░██████╗
+██╔══██╗██╔══██╗██╔══██╗░░░░░██║██╔════╝██╔══██╗╚══██╔══╝██╔════╝
+██████╔╝██████╔╝██║░░██║░░░░░██║█████╗░░██║░░╚═╝░░░██║░░░╚█████╗░
+██╔═══╝░██╔══██╗██║░░██║██╗░░██║██╔══╝░░██║░░██╗░░░██║░░░░╚═══██╗
+██║░░░░░██║░░██║╚█████╔╝╚█████╔╝███████╗╚█████╔╝░░░██║░░░██████╔╝
+╚═╝░░░░░╚═╝░░╚═╝░╚════╝░░╚════╝░╚══════╝░╚════╝░░░░╚═╝░░░╚═════╝░
+
+░░██╗██████╗░███████╗░██████╗██╗░░██╗████████╗░█████╗░██████╗░██╗░░
+░██╔╝██╔══██╗██╔════╝██╔════╝██║░██╔╝╚══██╔══╝██╔══██╗██╔══██╗╚██╗░
+██╔╝░██║░░██║█████╗░░╚█████╗░█████═╝░░░░██║░░░██║░░██║██████╔╝░╚██╗
+╚██╗░██║░░██║██╔══╝░░░╚═══██╗██╔═██╗░░░░██║░░░██║░░██║██╔═══╝░░██╔╝
+░╚██╗██████╔╝███████╗██████╔╝██║░╚██╗░░░██║░░░╚█████╔╝██║░░░░░██╔╝░
+░░╚═╝╚═════╝░╚══════╝╚═════╝░╚═╝░░╚═╝░░░╚═╝░░░░╚════╝░╚═╝░░░░░╚═╝░░
+
+*/
+#Projects nav.main .container .Highlight {
+  background: #9f5edb;
+  box-shadow: 0 0 5px 0 rgba(159, 94, 219, 0.5), 0 1px 2px 0 rgba(0, 0, 0, 0.8), inset 0 1px 0 0 rgba(255, 255, 255, 0.3);
+}
+
+#Projects header .Logo {
+  background-image: url("../-/IMG/KA-Logo-4.png");
+  background-size: cover;
+}
+#Projects header .PixelBar {
+  background-image: url("../-/IMG/Pixel-Bar-Purple.png");
+}
+
+/*
+
+░█████╗░██████╗░░█████╗░██╗░░██╗██╗██╗░░░██╗███████╗
+██╔══██╗██╔══██╗██╔══██╗██║░░██║██║██║░░░██║██╔════╝
+███████║██████╔╝██║░░╚═╝███████║██║╚██╗░██╔╝█████╗░░
+██╔══██║██╔══██╗██║░░██╗██╔══██║██║░╚████╔╝░██╔══╝░░
+██║░░██║██║░░██║╚█████╔╝██║░░██║██║░░╚██╔╝░░███████╗
+╚═╝░░╚═╝╚═╝░░╚═╝░╚════╝░╚═╝░░╚═╝╚═╝░░░╚═╝░░░╚══════╝
+
+░░██╗██████╗░███████╗░██████╗██╗░░██╗████████╗░█████╗░██████╗░██╗░░
+░██╔╝██╔══██╗██╔════╝██╔════╝██║░██╔╝╚══██╔══╝██╔══██╗██╔══██╗╚██╗░
+██╔╝░██║░░██║█████╗░░╚█████╗░█████═╝░░░░██║░░░██║░░██║██████╔╝░╚██╗
+╚██╗░██║░░██║██╔══╝░░░╚═══██╗██╔═██╗░░░░██║░░░██║░░██║██╔═══╝░░██╔╝
+░╚██╗██████╔╝███████╗██████╔╝██║░╚██╗░░░██║░░░╚█████╔╝██║░░░░░██╔╝░
+░░╚═╝╚═════╝░╚══════╝╚═════╝░╚═╝░░╚═╝░░░╚═╝░░░░╚════╝░╚═╝░░░░░╚═╝░░
+
+*/
+#Archive nav.main .container .Highlight {
+  background: #824558;
+  box-shadow: 0 0 5px 0 rgba(130, 69, 88, 0.5), 0 1px 2px 0 rgba(0, 0, 0, 0.8), inset 0 1px 0 0 rgba(255, 255, 255, 0.3);
+}
+
+#Archive header .Logo {
+  background-image: url("../-/IMG/KA-Logo-5.png");
+  background-size: cover;
+}
+#Archive header .PixelBar {
+  background-image: url("../-/IMG/Pixel-Bar-Plum.png");
+}
+
+#Archive main {
+  max-width: 900px;
+  min-width: 360px;
+  margin: auto;
+  margin-top: 24px;
+}
+#Archive main .Content {
+  width: calc(100% - 204px);
+  float: right;
+  column-count: 2;
+  column-gap: 24px;
+}
+
+#Archive nav.sub .container {
+  background-image: url("../-/IMG/background-noise-5.png");
+  background-color: #1c1e22;
+  background-blend-mode: overlay;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.25), 0 5px 20px 0 rgba(0, 0, 0, 0.5), inset 0 0 0 0 rgba(255, 255, 255, 0.1);
+  border-radius: 14px;
+  width: 180px;
+  display: flex;
+  flex-direction: column;
+}
+#Archive nav.sub .container a {
+  width: 100%;
+  height: 40px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffeed6;
+  letter-spacing: 0;
+  line-height: 40px;
+  text-decoration: none;
+  padding-left: 16px;
+  transition: all 150ms ease-in-out;
+}
+#Archive nav.sub .container a:hover {
+  padding-left: 24px;
+  transition: all 150ms ease-in-out;
+}
+#Archive nav.sub .container a.active {
+  text-indent: 8px;
+}
+#Archive nav.sub .container a.active .highlight {
+  background: #824558;
+  box-shadow: 0 0 5px 0 rgba(130, 69, 88, 0.5), 0 1px 2px 0 rgba(0, 0, 0, 0.8), inset 0 1px 0 0 rgba(255, 255, 255, 0.3);
+  border-radius: 2px;
+  width: 3px;
+  height: 24px;
+  margin-top: 8px;
+  display: block;
+  float: left;
+}
+
+/*
+
+░█████╗░░█████╗░███╗░░██╗████████╗░█████╗░░█████╗░████████╗
+██╔══██╗██╔══██╗████╗░██║╚══██╔══╝██╔══██╗██╔══██╗╚══██╔══╝
+██║░░╚═╝██║░░██║██╔██╗██║░░░██║░░░███████║██║░░╚═╝░░░██║░░░
+██║░░██╗██║░░██║██║╚████║░░░██║░░░██╔══██║██║░░██╗░░░██║░░░
+╚█████╔╝╚█████╔╝██║░╚███║░░░██║░░░██║░░██║╚█████╔╝░░░██║░░░
+░╚════╝░░╚════╝░╚═╝░░╚══╝░░░╚═╝░░░╚═╝░░╚═╝░╚════╝░░░░╚═╝░░░
+
+░░██╗██████╗░███████╗░██████╗██╗░░██╗████████╗░█████╗░██████╗░██╗░░
+░██╔╝██╔══██╗██╔════╝██╔════╝██║░██╔╝╚══██╔══╝██╔══██╗██╔══██╗╚██╗░
+██╔╝░██║░░██║█████╗░░╚█████╗░█████═╝░░░░██║░░░██║░░██║██████╔╝░╚██╗
+╚██╗░██║░░██║██╔══╝░░░╚═══██╗██╔═██╗░░░░██║░░░██║░░██║██╔═══╝░░██╔╝
+░╚██╗██████╔╝███████╗██████╔╝██║░╚██╗░░░██║░░░╚█████╔╝██║░░░░░██╔╝░
+░░╚═╝╚═════╝░╚══════╝╚═════╝░╚═╝░░╚═╝░░░╚═╝░░░░╚════╝░╚═╝░░░░░╚═╝░░
+
+*/
+#Contact nav.main .container .Highlight {
+  background: #3697e0;
+  box-shadow: 0 0 5px 0 rgba(54, 151, 224, 0.5), 0 1px 2px 0 rgba(0, 0, 0, 0.8), inset 0 1px 0 0 rgba(255, 255, 255, 0.3);
+}
+
+#Contact header .Logo {
+  background-image: url("../-/IMG/KA-Logo-6.png");
+  background-size: cover;
+}
+#Contact header .PixelBar {
+  background-image: url("../-/IMG/Pixel-Bar-Blue.png");
+}
+
+@media only screen and (max-width: 600px) {
+  #Home main {
+    column-count: 1;
+    column-gap: 24px;
+  }
+  #Uses nav.sub .container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  #Uses nav.sub .container a {
+    width: 40%;
+    height: 40px;
+  }
+  #Uses nav.sub .container a.active {
+    text-indent: 8px;
+  }
 }
 
 /*# sourceMappingURL=app.css.map */

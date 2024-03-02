@@ -4,7 +4,6 @@
   ],
   "eablokker.tabsSidebar.config.customKindGroupsOrder" : [
     "plaintext",
-    "html",
     "scss",
     "markdown"
   ],

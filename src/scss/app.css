@@ -65,10 +65,10 @@ nav.main {
 nav.main .container {
   background: #1c1e22;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.25), 0 5px 20px 0 rgba(0, 0, 0, 0.5), inset 0 1px 0 0 rgba(255, 255, 255, 0.1);
-  border-radius: 14px;
+  border-radius: 40px;
   padding: 8px 0 8px 0;
   max-width: 500px;
-  height: 50px;
+  height: 40px;
   margin: auto;
   display: flex;
   flex-direction: row;
@@ -79,12 +79,11 @@ nav.main .container a {
   font-size: 12px;
   font-weight: 600;
   color: #ffeed6;
-  line-height: 50px;
+  line-height: 40px;
   text-decoration: none;
   height: 50px;
   min-width: 50px;
   text-align: center;
-  float: left;
   display: flex;
   flex-direction: column;
 }
@@ -98,9 +97,9 @@ nav.main .container a.active .Highlight {
   background: #cb3d2b;
   box-shadow: 0 0 5px 0 rgba(237, 63, 28, 0.5), 0 1px 2px 0 rgba(0, 0, 0, 0.8), inset 0 1px 0 0 rgba(255, 255, 255, 0.3);
   border-radius: 2px;
-  width: 100%;
+  width: 80%;
   height: 3px;
-  margin: -4px 0 0 0;
+  margin: -4px 10% 0 10%;
   display: block;
   float: left;
 }
@@ -156,6 +155,7 @@ header topbar .LastFM {
   height: 40px;
   margin: 16px 0 16px 0;
   flex-grow: 1;
+  position: relative;
 }
 header topbar .LastFM .Icon {
   width: 24px;
@@ -165,11 +165,11 @@ header topbar .LastFM .Icon {
 header topbar .LastFM .Text {
   padding-left: 4px;
   width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 header topbar .LastFM .Text #now_playing {
   height: 45px;
-  position: relative;
-  float: left;
 }
 header topbar .LastFM .Text #now_playing a {
   line-height: 24px;
@@ -179,12 +179,11 @@ header topbar .LastFM .Text #now_playing a {
   font-size: 12px;
   color: #ffeed6;
   text-decoration: none;
-  float: left;
 }
 header topbar .LastFM .Text #LastFM {
-  float: right;
   margin-right: 16px;
-  position: relative;
+  position: absolute;
+  right: 0;
 }
 header topbar .LastFM .Text #LastFM ol {
   width: 40px;
@@ -194,7 +193,6 @@ header topbar .LastFM .Text #LastFM ol {
 header topbar .LastFM .Text #LastFM ol li {
   margin: 0;
   padding: 0;
-  float: left;
 }
 header topbar .LastFM .Text #LastFM ol li a img {
   width: 40px;
@@ -238,6 +236,7 @@ header h2 {
   padding-bottom: 48px;
 }
 header .PixelBar {
+  box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.05);
   width: calc(100% + 16px);
   margin-left: -8px;
   height: 50px;
@@ -369,7 +368,6 @@ header .PixelBar {
   background-image: url("../-/IMG/Icons/20/Mastodon.svg");
   width: 20px;
   height: 20px;
-  float: right;
   position: relative;
 }
 

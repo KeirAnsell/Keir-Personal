@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icons / 24 / Trackpad</title>
+    <defs>
+        <linearGradient x1="91.2928087%" y1="71.1539072%" x2="60.2740259%" y2="28.2158331%" id="linearGradient-1">
+            <stop stop-color="#000000" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#000000" stop-opacity="0.00784313725" offset="8.62099125%"></stop>
+            <stop stop-color="#000000" stop-opacity="0.0352941176" offset="16.5597668%"></stop>
+            <stop stop-color="#000000" stop-opacity="0.0784313725" offset="23.9300292%"></stop>
+            <stop stop-color="#000000" stop-opacity="0.129411765" offset="30.8454811%"></stop>
+            <stop stop-color="#000000" stop-opacity="0.188235294" offset="37.4198251%"></stop>
+            <stop stop-color="#000000" stop-opacity="0.254901961" offset="43.7667639%"></stop>
+            <stop stop-color="#000000" stop-opacity="0.325490196" offset="50%"></stop>
+            <stop stop-color="#000000" stop-opacity="0.396078431" offset="56.2332361%"></stop>
+            <stop stop-color="#000000" stop-opacity="0.458823529" offset="62.5801749%"></stop>
+            <stop stop-color="#000000" stop-opacity="0.521568627" offset="69.1545189%"></stop>
+            <stop stop-color="#000000" stop-opacity="0.57254902" offset="76.0699709%"></stop>
+            <stop stop-color="#000000" stop-opacity="0.615686275" offset="83.4402332%"></stop>
+            <stop stop-color="#000000" stop-opacity="0.639215686" offset="91.3790087%"></stop>
+            <stop stop-color="#000000" stop-opacity="0.650980392" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="91.2928087%" y1="71.1539072%" x2="60.2740259%" y2="28.2158331%" id="linearGradient-2">
+            <stop stop-color="#FFEED6" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#FFEED6" stop-opacity="0.00784313725" offset="8.62099125%"></stop>
+            <stop stop-color="#FFEED6" stop-opacity="0.0352941176" offset="16.5597668%"></stop>
+            <stop stop-color="#FFEED6" stop-opacity="0.0784313725" offset="23.9300292%"></stop>
+            <stop stop-color="#FFEED6" stop-opacity="0.129411765" offset="30.8454811%"></stop>
+            <stop stop-color="#FFEED6" stop-opacity="0.188235294" offset="37.4198251%"></stop>
+            <stop stop-color="#FFEED6" stop-opacity="0.254901961" offset="43.7667639%"></stop>
+            <stop stop-color="#FFEED6" stop-opacity="0.325490196" offset="50%"></stop>
+            <stop stop-color="#FFEED6" stop-opacity="0.396078431" offset="56.2332361%"></stop>
+            <stop stop-color="#FFEED6" stop-opacity="0.458823529" offset="62.5801749%"></stop>
+            <stop stop-color="#FFEED6" stop-opacity="0.521568627" offset="69.1545189%"></stop>
+            <stop stop-color="#FFEED6" stop-opacity="0.57254902" offset="76.0699709%"></stop>
+            <stop stop-color="#FFEED6" stop-opacity="0.615686275" offset="83.4402332%"></stop>
+            <stop stop-color="#FFEED6" stop-opacity="0.639215686" offset="91.3790087%"></stop>
+            <stop stop-color="#FFEED6" stop-opacity="0.650980392" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Icons-/-24-/-Trackpad" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Color" transform="translate(0, 3)">
+            <path d="M19.9361148,0 C20.9753785,0 21.5668249,0.114213575 22.184244,0.444412907 C22.7715726,0.758519698 23.2414803,1.22842737 23.5555871,1.81575601 C23.8857864,2.43317508 24,3.02462151 24,4.0638852 L24,14.9361148 C24,15.9753785 23.8857864,16.5668249 23.5555871,17.184244 C23.2414803,17.7715726 22.7715726,18.2414803 22.184244,18.5555871 C21.5668249,18.8857864 20.9753785,19 19.9361148,19 L4.0638852,19 C3.02462151,19 2.43317508,18.8857864 1.81575601,18.5555871 C1.22842737,18.2414803 0.758519698,17.7715726 0.444412907,17.184244 C0.114213575,16.5668249 0,15.9753785 0,14.9361148 L0,4.0638852 C0,3.02462151 0.114213575,2.43317508 0.444412907,1.81575601 C0.758519698,1.22842737 1.22842737,0.758519698 1.81575601,0.444412907 C2.43317508,0.114213575 3.02462151,0 4.0638852,0 L19.9361148,0 Z M19.2951435,1.5 L4.7048565,1.5 C3.59045808,1.5 3.18635028,1.61603201 2.77894287,1.83391588 C2.37153546,2.05179975 2.05179975,2.37153546 1.83391588,2.77894287 C1.61603201,3.18635028 1.5,3.59045808 1.5,4.7048565 L1.5,13.2951435 C1.5,14.4095419 1.61603201,14.8136497 1.83391588,15.2210571 C2.05179975,15.6284645 2.37153546,15.9482003 2.77894287,16.1660841 C3.18635028,16.383968 3.59045808,16.5 4.7048565,16.5 L19.2951435,16.5 C20.4095419,16.5 20.8136497,16.383968 21.2210571,16.1660841 C21.6284645,15.9482003 21.9482003,15.6284645 22.1660841,15.2210571 C22.383968,14.8136497 22.5,14.4095419 22.5,13.2951435 L22.5,4.7048565 C22.5,3.59045808 22.383968,3.18635028 22.1660841,2.77894287 C21.9482003,2.37153546 21.6284645,2.05179975 21.2210571,1.83391588 C20.8136497,1.61603201 20.4095419,1.5 19.2951435,1.5 Z" id="Combined-Shape" fill="#FFEED6" fill-rule="nonzero"></path>
+            <rect id="Rectangle" fill="url(#linearGradient-2)" opacity="0.5" x="1.5" y="1.5" width="21" height="15" rx="2.5"></rect>
+        </g>
+    </g>
+</svg>

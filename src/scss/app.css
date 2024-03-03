@@ -1,5 +1,5 @@
 @charset "UTF-8";
-body {
+██╗░░░██╗░█████╗░██████╗░██╗░█████╗░██████╗░██╗░░░░░███████╗░██████╗ ██║░░░██║██╔══██╗██╔══██╗██║██╔══██╗██╔══██╗██║░░░░░██╔════╝██╔════╝ ╚██╗░██╔╝███████║██████╔╝██║███████║██████╦╝██║░░░░░█████╗░░╚█████╗░ ░╚████╔╝░██╔══██║██╔══██╗██║██╔══██║██╔══██╗██║░░░░░██╔══╝░░░╚═══██╗ ░░╚██╔╝░░██║░░██║██║░░██║██║██║░░██║██████╦╝███████╗███████╗██████╔╝ ░░░╚═╝░░░╚═╝░░╚═╝╚═╝░░╚═╝╚═╝╚═╝░░╚═╝╚═════╝░╚══════╝╚══════╝╚═════╝░ body {
   font-family: "AT-Hauss", sans-serif;
   background-color: #111 !important;
 }
@@ -490,7 +490,8 @@ header .PixelBar {
   column-gap: 24px;
 }
 .Uses-Hardware main .Content .Card {
-  background-image: url("../-/IMG/background-noise-2.png"), linear-gradient(180deg, #282c2b 0%, #222525 100%);
+  background-image: url("../-/IMG/background-noise-5.png"), linear-gradient(180deg, #282c2b 0%, #222525 100%);
+  background-blend-mode: overlay;
   box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.5), inset 0 1px 0 0 rgba(255, 255, 255, 0.15);
   border-radius: 14px;
   max-width: 350px;
@@ -546,60 +547,11 @@ header .PixelBar {
   margin: 0;
   padding: 0;
 }
-.Uses-Hardware main .Content .Card ul li .Icon {
-  background-color: #ffeed6;
+.Uses-Hardware main .Content .Card ul li .HardwareIcon {
   width: 24px;
   height: 24px;
   margin-right: 4px;
   float: left;
-}
-.Uses-Hardware main .Content .Card ul li .Icon#CPU {
-  -webkit-mask-image: url("../-/IMG/Icons/24/Hardware/CPU.svg");
-  mask-image: url("../-/IMG/Icons/24/Hardware/CPU.svg");
-}
-.Uses-Hardware main .Content .Card ul li .Icon#RAM {
-  -webkit-mask-image: url("../-/IMG/Icons/24/Hardware/RAM.svg");
-  mask-image: url("../-/IMG/Icons/24/Hardware/RAM.svg");
-}
-.Uses-Hardware main .Content .Card ul li .Icon#GPU {
-  -webkit-mask-image: url("../-/IMG/Icons/24/Hardware/GPU.svg");
-  mask-image: url("../-/IMG/Icons/24/Hardware/GPU.svg");
-}
-.Uses-Hardware main .Content .Card ul li .Icon#Motherboard {
-  -webkit-mask-image: url("../-/IMG/Icons/24/Hardware/Motherboard.svg");
-  mask-image: url("../-/IMG/Icons/24/Hardware/Motherboard.svg");
-}
-.Uses-Hardware main .Content .Card ul li .Icon#Storage {
-  -webkit-mask-image: url("../-/IMG/Icons/24/Hardware/NVMe.svg");
-  mask-image: url("../-/IMG/Icons/24/Hardware/NVMe.svg");
-}
-.Uses-Hardware main .Content .Card ul li .Icon#Display {
-  -webkit-mask-image: url("../-/IMG/Icons/24/Hardware/Display.svg");
-  mask-image: url("../-/IMG/Icons/24/Hardware/Display.svg");
-}
-.Uses-Hardware main .Content .Card ul li .Icon#Case {
-  -webkit-mask-image: url("../-/IMG/Icons/24/Hardware/Case.svg");
-  mask-image: url("../-/IMG/Icons/24/Hardware/Case.svg");
-}
-.Uses-Hardware main .Content .Card ul li .Icon#Keyboard {
-  -webkit-mask-image: url("../-/IMG/Icons/24/Hardware/Keyboard.svg");
-  mask-image: url("../-/IMG/Icons/24/Hardware/Keyboard.svg");
-}
-.Uses-Hardware main .Content .Card ul li .Icon#Mouse {
-  -webkit-mask-image: url("../-/IMG/Icons/24/Hardware/Mouse.svg");
-  mask-image: url("../-/IMG/Icons/24/Hardware/Mouse.svg");
-}
-.Uses-Hardware main .Content .Card ul li .Icon#Trackpad {
-  -webkit-mask-image: url("../-/IMG/Icons/24/Hardware/Trackpad.svg");
-  mask-image: url("../-/IMG/Icons/24/Hardware/Trackpad.svg");
-}
-.Uses-Hardware main .Content .Card ul li .Icon#Speakers {
-  -webkit-mask-image: url("../-/IMG/Icons/24/Hardware/Speakers.svg");
-  mask-image: url("../-/IMG/Icons/24/Hardware/Speakers.svg");
-}
-.Uses-Hardware main .Content .Card ul li .Icon#Headset {
-  -webkit-mask-image: url("../-/IMG/Icons/24/Hardware/Headset.svg");
-  mask-image: url("../-/IMG/Icons/24/Hardware/Headset.svg");
 }
 .Uses-Hardware main .Content .Card ul li p {
   font-size: 12px;
@@ -607,6 +559,9 @@ header .PixelBar {
   letter-spacing: 0;
   line-height: 24px;
   text-indent: 4px;
+}
+.Uses-Hardware main .Content .Card ul li p:nth-child(3) {
+  text-indent: 32px;
 }
 
 #Uses nav.sub .container {

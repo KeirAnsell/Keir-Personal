@@ -4,13 +4,10 @@
   ],
   "eablokker.tabsSidebar.config.customKindGroupsOrder" : [
     "plaintext",
-    "scss",
-    "markdown"
+    "scss"
   ],
   "eablokker.tabsSidebar.config.customTabOrder" : [
-    "file:\/\/\/Users\/Keir\/Library\/Mobile%20Documents\/com~apple~CloudDocs\/Keir-Personal\/src\/index.njk",
     "file:\/\/\/Users\/Keir\/Library\/Mobile%20Documents\/com~apple~CloudDocs\/Keir-Personal\/src\/scss\/app.scss",
-    "file:\/\/\/Users\/Keir\/Library\/Mobile%20Documents\/com~apple~CloudDocs\/Keir-Personal\/src\/scss\/_somethingelse.scss",
-    "file:\/\/\/Users\/Keir\/Library\/Mobile%20Documents\/com~apple~CloudDocs\/Keir-Personal\/src\/another_page.md"
+    "file:\/\/\/Users\/Keir\/Library\/Mobile%20Documents\/com~apple~CloudDocs\/Keir-Personal\/src\/pages\/uses\/hardware.njk"
   ]
 }

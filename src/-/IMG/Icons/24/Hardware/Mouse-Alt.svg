@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icons / 24 / Mouse</title>
+    <g id="Icons-/-24-/-Mouse" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Color" transform="translate(6, 1.5)" stroke="#FFEED6" stroke-width="1.5">
+            <path d="M6,-0.75 C7.86396103,-0.75 9.55146103,0.0055194847 10.7729708,1.22702923 C11.9944805,2.44853897 12.75,4.13603897 12.75,6 L12.75,15 C12.75,16.863961 11.9944805,18.551461 10.7729708,19.7729708 C9.55146103,20.9944805 7.86396103,21.75 6,21.75 C4.13603897,21.75 2.44853897,20.9944805 1.22702923,19.7729708 C0.0055194847,18.551461 -0.75,16.863961 -0.75,15 L-0.75,6 C-0.75,4.13603897 0.0055194847,2.44853897 1.22702923,1.22702923 C2.44853897,0.0055194847 4.13603897,-0.75 6,-0.75 Z" id="Rectangle"></path>
+            <line x1="6" y1="4" x2="6" y2="6.5" id="Path-11" stroke-linecap="round" stroke-linejoin="round"></line>
+        </g>
+    </g>
+</svg>

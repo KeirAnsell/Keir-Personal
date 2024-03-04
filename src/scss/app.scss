@@ -1,3 +1,4 @@
+/*
 
 ██╗░░░██╗░█████╗░██████╗░██╗░█████╗░██████╗░██╗░░░░░███████╗░██████╗
 ██║░░░██║██╔══██╗██╔══██╗██║██╔══██╗██╔══██╗██║░░░░░██╔════╝██╔════╝
@@ -5,6 +6,18 @@
 ░╚████╔╝░██╔══██║██╔══██╗██║██╔══██║██╔══██╗██║░░░░░██╔══╝░░░╚═══██╗
 ░░╚██╔╝░░██║░░██║██║░░██║██║██║░░██║██████╦╝███████╗███████╗██████╔╝
 ░░░╚═╝░░░╚═╝░░╚═╝╚═╝░░╚═╝╚═╝╚═╝░░╚═╝╚═════╝░╚══════╝╚══════╝╚═════╝░
+
+*/
+
+:root {
+  --brand-cream: #FFEED6;
+  --brand-red: #CB3D2B;
+  --brand-yellow: #F68E1F;
+  --brand-green: #006666;
+  --brand-plum: #824559;
+  --brand-purple: #9F5EDB;
+  --brand-blue: #3698E1;
+}
 
 body {
   font-family: "AT-Hauss", sans-serif;
@@ -18,10 +31,10 @@ nav.main {
     background: #1c1e22;
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.25), 0 5px 20px 0 rgba(0, 0, 0, 0.5),
       inset 0 1px 0 0 rgba(255, 255, 255, 0.1);
-    border-radius: 40px;
-    padding: 8px 0 8px 0;
+    border-radius: 14px;
+    padding: 0;
     max-width: 500px;
-    height: 40px;
+    height: 50px;
     margin: auto;
     display: flex;
     flex-direction: row;
@@ -30,31 +43,34 @@ nav.main {
     a {
       font-size: 12px;
       font-weight: 600;
-      color: #ffeed6;
-      line-height: 40px;
+      color: var(--brand-cream);
+      line-height: 50px;
       text-decoration: none;
       height: 50px;
       min-width: 50px;
       text-align: center;
       display: flex;
       flex-direction: column;
+      position: relative;
       .Label {
         padding: 0 16px 0 16px;
       }
     }
     a.active {
-      color: #ffeed6;
+      color: var(--brand-cream);
       .Highlight {
-        background: #cb3d2b;
+        background: var(--brand-red);
         box-shadow: 0 0 5px 0 rgba(237, 63, 28, 0.5),
           0 1px 2px 0 rgba(0, 0, 0, 0.8),
           inset 0 1px 0 0 rgba(255, 255, 255, 0.3);
         border-radius: 2px;
         width: 80%;
         height: 3px;
-        margin: -4px 10% 0 10%;
+        margin: 48px 10% 0 10%;
         display: block;
+        position: absolute;
         float: left;
+        z-index: 100;
       }
     }
   }
@@ -104,13 +120,13 @@ header {
       .Text {
         height: 24px;
         line-height: 24px;
-        padding-left: 4px;
+        padding-left: 8px;
       }
     }
     .LastFM {
       font-size: 12px;
       font-weight: 500;
-      color: #ffeed6;
+      color: var(--brand-cream);
       letter-spacing: 0;
       flex-grow: 1;
       display: flex;
@@ -125,8 +141,9 @@ header {
         margin: 24px 0 24px 24px;
       }
       .Text {
-        padding-left: 4px;
+        padding-left: 8px;
         width: 100%;
+        line-height: 46px;
         display: flex;
         flex-direction: column;
         #now_playing {
@@ -180,7 +197,7 @@ header {
   h1 {
     font-size: 48px;
     font-weight: 700;
-    color: #ffeed8;
+    color: var(--brand-cream);
     letter-spacing: 0;
     text-align: center;
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8);
@@ -193,7 +210,7 @@ header {
   h2 {
     font-size: 20px;
     font-weight: 400;
-    color: #ffeed6;
+    color: var(--brand-cream);
     letter-spacing: 1px;
     text-align: center;
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8);
@@ -366,7 +383,7 @@ header {
 
 */
 #About nav.main .container .Highlight {
-  background: #f68e1f;
+  background: var(--brand-yellow);
   box-shadow: 0 0 5px 0 rgba(246, 142, 31, 0.5), 0 1px 2px 0 rgba(0, 0, 0, 0.8),
     inset 0 1px 0 0 rgba(255, 255, 255, 0.3);
 }
@@ -403,7 +420,7 @@ header {
       height: 40px;
       font-size: 14px;
       font-weight: 600;
-      color: #ffeed6;
+      color: var(--brand-cream);
       letter-spacing: 0;
       line-height: 40px;
       text-decoration: none;
@@ -416,7 +433,7 @@ header {
       &.active {
         text-indent: 8px;
         .highlight {
-          background: #f68e1f;
+          background: var(--brand-yellow);
           box-shadow: 0 0 5px 0 rgba(246, 142, 31, 0.5),
             0 1px 2px 0 rgba(0, 0, 0, 0.8),
             inset 0 1px 0 0 rgba(255, 255, 255, 0.5);
@@ -450,7 +467,7 @@ header {
 
 */
 #Uses nav.main .container .Highlight {
-  background: #006666;
+  background: var(--brand-green);
   box-shadow: 0 0 5px 0 rgba(0, 102, 102, 0.5), 0 1px 2px 0 rgba(0, 0, 0, 0.8),
     inset 0 1px 0 0 rgba(255, 255, 255, 0.3);
 }
@@ -588,7 +605,7 @@ header {
       &.active {
         text-indent: 8px;
         .highlight {
-          background: #006666;
+          background: var(--brand-green);
           box-shadow: 0 0 5px 0 rgba(0, 102, 102, 0.5),
             0 1px 2px 0 rgba(0, 0, 0, 0.8),
             inset 0 1px 0 0 rgba(255, 255, 255, 0.3);
@@ -621,7 +638,7 @@ header {
 
 */
 #Projects nav.main .container .Highlight {
-  background: #9f5edb;
+  background: var(--brand-purple);
   box-shadow: 0 0 5px 0 rgba(159, 94, 219, 0.5), 0 1px 2px 0 rgba(0, 0, 0, 0.8),
     inset 0 1px 0 0 rgba(255, 255, 255, 0.3);
 }

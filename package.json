@@ -4,9 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "./node_modules/.bin/eleventy --serve",
-    "build": "./node_modules/.bin/eleventy",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "eleventy --serve",
+    "build": "ELEVENTY_PRODUCTION=true eleventy"
   },
   "keywords": [],
   "author": "",
@@ -15,6 +14,7 @@
     "@11ty/eleventy": "^2.0.1"
   },
   "dependencies": {
-    "@11tyrocks/eleventy-plugin-sass-lightningcss": "^1.2.0"
+    "@11tyrocks/eleventy-plugin-sass-lightningcss": "^1.2.0",
+    "masonry-simple": "^3.1.0"
   }
 }

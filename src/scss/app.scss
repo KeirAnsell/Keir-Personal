@@ -547,13 +547,11 @@ header {
     }
   }
 }
-#macy-container.Content {
-  width: 100%;
+.masonry {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(10, 1fr);
-  grid-column-gap: 24px;
-  grid-row-gap: 24px;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-auto-flow: dense;
+  grid-gap: 10px;
 }
 .Uses-Hardware main {
   max-width: 900px;
@@ -561,6 +559,7 @@ header {
   margin: auto;
   margin-top: 24px;
     .Card {
+      display: inline-block;
       background-image: url("../-/IMG/background-noise-5.png"),
         linear-gradient(180deg, #282c2b 0%, #222525 100%);
       background-blend-mode: overlay;
@@ -593,7 +592,7 @@ header {
         margin: 8px 0 16px 0;
         padding: 0 4px 0 4px;
         justify-self: start;
-        float: left;
+        display: inline;
         &#Green {
           background: rgba(66, 255, 202, 0.2);
           color: #42ffca;

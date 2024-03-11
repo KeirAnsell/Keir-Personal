@@ -1,4 +1,26 @@
 <nav class="sub">
+	<div class="container">
+		<a href="/about/almanac.html" {% if ('/about/almanac.html' in page.url) %}class="active"{% endif %}>
+			<span class="Label">Almanac</span>
+			<div class="Highlight"></div>
+		</a>
+		<a href="/about/app-defaults.html" {% if ('/about/app-defaults.html' in page.url) %}class="active"{% endif %}>
+			<span class="Label">App Defaults</span>
+			<div class="Highlight"></div>
+		</a>
+		<a href="/about/colophon.html" {% if ('/about/colophon.html' in page.url) %}class="active"{% endif %}>
+			<span class="Label">Colophon</span>
+			<div class="Highlight"></div>
+		</a>
+		<a href="/about/website-archive.html" {% if ('/about/website-archive.html' in page.url) %}class="active"{% endif %}>
+			<span class="Label">Website Archive</span>
+			<div class="Highlight"></div>
+		</a>
+	</div>
+</nav>
+
+<!--
+<nav class="sub">
   <div class="container">
 	<a href="/about/almanac.html" {% if ('/about/almanac.html' in page.url) %}class="active"{% endif %}><div class="highlight"></div>Almanac</a>
 	<a href="/about/app-defaults.html" {% if ('/about/app-defaults.html' in page.url) %}class="active"{% endif %}><div class="highlight"></div>App Defaults</a>
@@ -6,3 +28,4 @@
 	<a href="/about/website-archive.html" {% if ('/about/website-archive.html' in page.url) %}class="active"{% endif %}><div class="highlight"></div>Website Archive</a>
   </div>
 </nav>
+-->
